@@ -5,19 +5,20 @@
 // Aggiungere alla pagina un’immagine, presa anch’essa da un 
 // data.
 
-const settings = {
+const app = new Vue ({
     el : '#app',
     data: {
         name: '',
         surname: '',
         saluto: '',
-        srcImg: '',
+        classList: 'gray',
+        srcImg: 'https://picsum.photos/200/200',
+        altImg: 'Immagine random',
     },
     methods: {
         saluta : function() {
             this.saluto = `Benvenuto ${this.name} ${this.surname}!!`;
-        }
-        
+        } 
     }
-}
-const app = new Vue(settings);
+});
+
