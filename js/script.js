@@ -6,7 +6,7 @@
 // data.
 
 const app = new Vue ({
-    el : '#app',
+    el: '#app',
     data: {
         name: '',
         surname: '',
@@ -17,7 +17,7 @@ const app = new Vue ({
     },
     methods: {
         saluta : function() {
-            this.saluto = `Benvenuto ${this.name} ${this.surname}!!`;
+            this.saluto = `Benvenuto/a ${this.name} ${this.surname}!!`;
         } 
     }
 });
